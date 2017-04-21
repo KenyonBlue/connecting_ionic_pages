@@ -9,7 +9,8 @@ import { NavController } from 'ionic-angular';
 
 
 export class KenyonPage {
+    
+    
     constructor(public navCtrl: NavController) {}
-
     
     }
