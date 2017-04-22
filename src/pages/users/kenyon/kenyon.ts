@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-
+import { NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-kenyon',
@@ -9,7 +8,12 @@ import { NavController } from 'ionic-angular';
 
 
 export class KenyonPage {
-    constructor(public navCtrl: NavController) {}
-
     
+    name: string = this.navParams.get('name');
+    
+    constructor(public navParams: NavParams) {
+        this.name = this.navParams.get('kenyonName');
+    }
+    
+               
     }
