@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { KenyonPage } from '../users/kenyon/kenyon';
+
 
 
 @Component({
@@ -10,8 +11,13 @@ import { KenyonPage } from '../users/kenyon/kenyon';
 
 
 export class UsersPage {
-    constructor(public navCtrl: NavController) {}
+    constructor(public navCtrl: NavController, public navParams: NavParams) {}
     
+    /* name: string = this.navParams.get('name'); */
+    
+    onLoadUser(name: string){
+    this.navCtrl.push(KenyonPage, {kenyonName: name});
+    }
     
     kenyonPage(){
     this.navCtrl.push(KenyonPage);
