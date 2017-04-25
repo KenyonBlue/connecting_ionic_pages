@@ -7,8 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 /* import { HomePage } from '/src/pages/home/home'; */
 import { HomePage } from '../pages/home/home'; 
+import { HometabPage } from '../pages/hometab/hometab'; 
+import { CentrePage } from '../pages/centre/centre'; 
+import { CincinnatiPage } from '../pages/cincinnati/cincinnati'; 
+import { LexingtonPage } from '../pages/lexington/lexington'; 
 import { UsersPage } from '../pages/users/users';
 import { KenyonPage } from '../pages/users/kenyon/kenyon';
+
 
 
 
@@ -17,7 +22,11 @@ import { KenyonPage } from '../pages/users/kenyon/kenyon';
     MyApp,
     HomePage,
     UsersPage,
-    KenyonPage
+    KenyonPage,
+    HometabPage,
+      CentrePage,
+      CincinnatiPage,
+      LexingtonPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +37,11 @@ import { KenyonPage } from '../pages/users/kenyon/kenyon';
     MyApp,
     HomePage,
     UsersPage,
-    KenyonPage
+    KenyonPage,
+    HometabPage,
+      CentrePage,
+      CincinnatiPage,
+      LexingtonPage
   ],
   providers: [
     StatusBar,

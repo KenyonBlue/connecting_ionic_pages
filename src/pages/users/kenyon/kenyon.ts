@@ -17,6 +17,8 @@ export class KenyonPage {
     }
     
                onGoBack(){
-                this.navCtrl.pop();
+               
+                //this.navCtrl.pop();
+                this.navCtrl.popToRoot();
                }
     }

@@ -11,12 +11,13 @@ import { KenyonPage } from '../users/kenyon/kenyon';
 
 
 export class UsersPage {
+    
     constructor(public navCtrl: NavController, public navParams: NavParams) {}
     
    
     
     onLoadUser(name: string){
-    this.navCtrl.push(KenyonPage, {kenyonName: name});
+        this.navCtrl.push(KenyonPage, {kenyonName: name});
     }
     
    /* kenyonPage(){
