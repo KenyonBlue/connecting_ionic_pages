@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { CentrePage } from '../centre/centre'; 
 import { CincinnatiPage } from '../cincinnati/cincinnati'; 
 import { LexingtonPage } from '../lexington/lexington'; 
-import { UsersPage } from '../users/users';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the Hometab tabs.
  *
@@ -17,7 +17,7 @@ import { UsersPage } from '../users/users';
 
 export class HometabPage {
 
-  tab1Root: any = UsersPage;
+  tab1Root: any = HomePage;
   tab2Root: any = CincinnatiPage;
   tab3Root: any = LexingtonPage;
   tab4Root: any = CentrePage;
