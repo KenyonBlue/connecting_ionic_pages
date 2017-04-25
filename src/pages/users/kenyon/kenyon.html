@@ -1,13 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-     this is the title
+     {{ name }}
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <p>{{ 'name' }}</p>
+  <p>This is {{ name }}'s Page</p>
+  <button ion-button (click)="onGoBack()">CONFIRM</button>
 </ion-content>
 <ion-footer padding>
     <p>{{ name }}</p>
